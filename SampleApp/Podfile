@@ -1,5 +1,5 @@
 use_frameworks!
 
 target 'SampleApp' do
-  pod 'CaseBug', :podspec => '../CaseBug/CaseBug.podspec'
+  pod 'CaseBug', :podspec => '../CaseBug.podspec'
 end

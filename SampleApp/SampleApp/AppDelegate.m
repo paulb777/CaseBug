@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import <CaseBug/foo.h>
+
 @interface AppDelegate ()
 
 @end

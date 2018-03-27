@@ -8,6 +8,8 @@
 
 #import "CBAppDelegate.h"
 
+#import <CaseBug/foo.h>
+
 @implementation CBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
