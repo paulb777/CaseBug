@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CaseBug_Example' do
+  pod 'CaseBug', :path => '../'
+
+  target 'CaseBug_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
