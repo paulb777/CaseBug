@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import <CaseBug/foo.h>
+
 @interface ViewController ()
 
 @end
