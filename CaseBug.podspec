@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CaseBug'
-  s.version          = '0.5.0'
+  s.version          = '0.6.0'
   s.summary          = 'A short, meaningful description of CaseBug.'
 
 # This description is used to generate tags and improve search results.
@@ -31,6 +31,14 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'CaseBug/Classes/**/*'
+  s.header_mappings_dir = 'CaseBug/Classes'
+
+  s.pod_target_xcconfig = {
+    # This is needed by all pods that depend on Protobuf:
+    'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1',
+    # This is needed by all pods that depend on gRPC-RxLibrary:
+    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+  }
   
   # s.resource_bundles = {
   #   'CaseBug' => ['CaseBug/Assets/*.png']
