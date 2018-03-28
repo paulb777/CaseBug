@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CaseBug'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = 'A short, meaningful description of CaseBug.'
 
 # This description is used to generate tags and improve search results.
